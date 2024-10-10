@@ -45,52 +45,58 @@ ESP32 sensors need to be correctly set up and integrated for real-time monitorin
 <h1>3. External Interface Requirements</h1>
 3.1 User Interfaces
 The app will feature a simple, user-friendly UI with the ability to add/edit plants, view the calendar, and monitor statistics. Sample screens will be included in the final design document.
+</br>
+</br>
 3.2 Hardware Interfaces
-The app will connect to ESP32 sensors for monitoring soil moisture. It will support communication over Wi-Fi for sensor data retrieval.
+The app will connect to ESP32 sensors for monitoring soil moisture. It will support communication over Wi-Fi for sensor data retrieval.</br>
+</br>
 3.3 Software Interfaces
 The application will integrate with Firebase for user authentication and Firestore for plant data storage.
-API integration with ESP32 sensors to receive real-time moisture data.
+API integration with ESP32 sensors to receive real-time moisture data.</br>
+</br>
 3.4 Communications Interfaces
 Data synchronization between the app and Firebase will occur over HTTPS.
-Real-time sensor data will be retrieved via the Wi-Fi module of the ESP32.
+Real-time sensor data will be retrieved via the Wi-Fi module of the ESP32.</br>
+</br>
 <h1>4. System Features</h1>
 4.1 User Registration and Login
 4.1.1 Description and Priority
-Users must be able to register and log into the app using their email addresses. This is a high-priority feature to ensure that data is saved securely for each user.
+Users must be able to register and log into the app using their email addresses. This is a high-priority feature to ensure that data is saved securely for each user.</br>
+</br>
 4.1.2 Stimulus/Response Sequences
 User Action: The user enters their email and password to register.
-System Response: The app checks if the email is already registered and, if not, creates a new account.
+System Response: The app checks if the email is already registered and, if not, creates a new account.</br></br>
 4.1.3 Functional Requirements
 The app must validate email formats.
-Passwords must meet security criteria (e.g., minimum 8 characters, including letters and numbers).
-4.2 Add/Edit Plants
+Passwords must meet security criteria (e.g., minimum 8 characters, including letters and numbers).</br></br>
+4.2 Add/Edit Plants</br></br>
 4.2.1 Description and Priority
-Users must be able to add, edit, and delete plants with associated events. This feature is essential for the core functionality of the app.
+Users must be able to add, edit, and delete plants with associated events. This feature is essential for the core functionality of the app.</br></br>
 4.2.2 Stimulus/Response Sequences
 User Action: The user adds a new plant, uploading a photo and setting event dates.
-System Response: The app stores the plant data in Firestore and updates the calendar.
+System Response: The app stores the plant data in Firestore and updates the calendar.</br></br>
 4.2.3 Functional Requirements
 Users can upload images up to 5MB.
-Users can set one-time or recurring events for each plant.
-4.3 ESP32 Sensor Integration
+Users can set one-time or recurring events for each plant.</br></br>
+4.3 ESP32 Sensor Integration</br></br>
 4.3.1 Description and Priority
-ESP32 sensors will monitor soil moisture levels and send data to the app for display. This feature is of medium priority but is key for users with sensors.
+ESP32 sensors will monitor soil moisture levels and send data to the app for display. This feature is of medium priority but is key for users with sensors.</br></br>
 4.3.2 Stimulus/Response Sequences
 User Action: The sensor records soil moisture levels.
-System Response: The app receives and displays the sensor data in real time.
+System Response: The app receives and displays the sensor data in real time.</br></br>
 4.3.3 Functional Requirements
 The app must display moisture data in a graph or numerical format.
-The app should alert users if moisture levels fall below a certain threshold.
+The app should alert users if moisture levels fall below a certain threshold.</br></br>
 <h1>5. Nonfunctional Requirements</h1>
 5.1 Performance Requirements
 The app must load plant data within 2 seconds.
-Sensor data must be updated in real time with a delay of no more than 5 seconds.</br>
+Sensor data must be updated in real time with a delay of no more than 5 seconds.</br></br>
 5.2 Security Requirements
 All user data must be encrypted in transit and at rest.
-User authentication must be secured via Firebase Authentication.</br>
+User authentication must be secured via Firebase Authentication.</br></br>
 5.3 Software Quality Attributes
 The app must be highly reliable, with 99% uptime for core features.
-Usability should be intuitive, with most users able to add plants without external help.</br>
+Usability should be intuitive, with most users able to add plants without external help.</br></br>
 5.4 Business Rules
 Users can only delete plants that they have added.
 The app will notify users of upcoming plant care events via push notifications.
