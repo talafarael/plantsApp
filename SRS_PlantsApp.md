@@ -2,22 +2,15 @@
 <h1>1. Introduction</h1>
 1.1 Purpose
 The purpose of the "Рослини App" project is to create a mobile application that allows users to register, add their plants with photos, descriptions, and event dates, and monitor plant conditions through ESP32 sensors. The app will display events in a calendar and provide plant care statistics. This SRS covers all major functionalities and subsystems of the application.
-
-
-
 1.2 Intended Audience and Reading Suggestions
 This document is intended for developers, project managers, testers, and end-users. It is organized to start with an overview of the product and move into specific functional and non-functional requirements. Developers should focus on sections 2 and 3, while users can refer to section 3 for a description of key features.
-
 1.3 Product Scope
 "Рослини App" aims to provide an all-in-one tool for plant enthusiasts to monitor and care for their plants. Users can add plants with recurring or one-time events, view them in a calendar, track plant care statistics, and monitor soil moisture using ESP32 sensors. This product will assist users in maintaining healthy plants through timely care reminders and sensor data integration.
-
 1.4 References
 Any references to external documents or resources, such as user manuals or external API documentation, will be provided here once they are finalized.
-
 <h1>2. Overall Description</h1>
 2.1 Product Perspective
 "Рослини App" is a standalone mobile application designed to integrate with ESP32 sensors for monitoring plant moisture levels. The application is new, self-contained, and designed to operate on both Android and iOS platforms. A diagram of the system architecture will be included in later versions of this document.
-
 2.2 Product Functions
 User Registration and Login: Users can register and log in via email.
 Add/Edit Plants: Users can add plants with names, descriptions, photos, and set events (watering, fertilizing).
@@ -30,7 +23,6 @@ Gardeners/Greenhouse Owners: More advanced users with a larger number of plants 
 Sensor Users: Users with ESP32 sensors connected to their plants for automated monitoring.
 2.4 Operating Environment
 The application will operate on Android and iOS platforms. It will require internet access to sync data with cloud storage and pull data from ESP32 sensors. It will also communicate with Firebase for backend operations and Firestore as a database.
-
 2.5 Design and Implementation Constraints
 The system must support real-time synchronization with ESP32 sensors.
 The application must comply with Android and iOS design guidelines.
@@ -55,7 +47,6 @@ Real-time sensor data will be retrieved via the Wi-Fi module of the ESP32.
 4.1 User Registration and Login
 4.1.1 Description and Priority
 Users must be able to register and log into the app using their email addresses. This is a high-priority feature to ensure that data is saved securely for each user.
-
 4.1.2 Stimulus/Response Sequences
 User Action: The user enters their email and password to register.
 System Response: The app checks if the email is already registered and, if not, creates a new account.
@@ -65,7 +56,6 @@ Passwords must meet security criteria (e.g., minimum 8 characters, including let
 4.2 Add/Edit Plants
 4.2.1 Description and Priority
 Users must be able to add, edit, and delete plants with associated events. This feature is essential for the core functionality of the app.
-
 4.2.2 Stimulus/Response Sequences
 User Action: The user adds a new plant, uploading a photo and setting event dates.
 System Response: The app stores the plant data in Firestore and updates the calendar.
@@ -75,7 +65,6 @@ Users can set one-time or recurring events for each plant.
 4.3 ESP32 Sensor Integration
 4.3.1 Description and Priority
 ESP32 sensors will monitor soil moisture levels and send data to the app for display. This feature is of medium priority but is key for users with sensors.
-
 4.3.2 Stimulus/Response Sequences
 User Action: The sensor records soil moisture levels.
 System Response: The app receives and displays the sensor data in real time.
