@@ -1,5 +1,5 @@
 
-1.<h1> Introduction</h1>
+<h1>1. Introduction</h1>
 1.1 Purpose
 The purpose of the "Рослини App" project is to create a mobile application that allows users to register, add their plants with photos, descriptions, and event dates, and monitor plant conditions through ESP32 sensors. The app will display events in a calendar and provide plant care statistics. This SRS covers all major functionalities and subsystems of the application.
 
