@@ -1,37 +1,47 @@
 
 <h1>1. Introduction</h1>
 1.1 Purpose
-The purpose of the "Рослини App" project is to create a mobile application that allows users to register, add their plants with photos, descriptions, and event dates, and monitor plant conditions through ESP32 sensors. The app will display events in a calendar and provide plant care statistics. This SRS covers all major functionalities and subsystems of the application.
+The purpose of the "Рослини App" project is to create a mobile application that allows users to register, add their plants with photos, descriptions, and event dates, and monitor plant conditions through ESP32 sensors. The app will display events in a calendar and provide plant care statistics. This SRS covers all major functionalities and subsystems of the application.</br>
+</br>
 1.2 Intended Audience and Reading Suggestions
-This document is intended for developers, project managers, testers, and end-users. It is organized to start with an overview of the product and move into specific functional and non-functional requirements. Developers should focus on sections 2 and 3, while users can refer to section 3 for a description of key features.
+This document is intended for developers, project managers, testers, and end-users. It is organized to start with an overview of the product and move into specific functional and non-functional requirements. Developers should focus on sections 2 and 3, while users can refer to section 3 for a description of key features.</br></br>
 1.3 Product Scope
-"Рослини App" aims to provide an all-in-one tool for plant enthusiasts to monitor and care for their plants. Users can add plants with recurring or one-time events, view them in a calendar, track plant care statistics, and monitor soil moisture using ESP32 sensors. This product will assist users in maintaining healthy plants through timely care reminders and sensor data integration.
+"Рослини App" aims to provide an all-in-one tool for plant enthusiasts to monitor and care for their plants. Users can add plants with recurring or one-time events, view them in a calendar, track plant care statistics, and monitor soil moisture using ESP32 sensors. This product will assist users in maintaining healthy plants through timely care reminders and sensor data integration.</br>
+</br>
 1.4 References
-Any references to external documents or resources, such as user manuals or external API documentation, will be provided here once they are finalized.
+Any references to external documents or resources, such as user manuals or external API documentation, will be provided here once they are finalized.</br>
+</br>
 <h1>2. Overall Description</h1>
 2.1 Product Perspective
-"Рослини App" is a standalone mobile application designed to integrate with ESP32 sensors for monitoring plant moisture levels. The application is new, self-contained, and designed to operate on both Android and iOS platforms. A diagram of the system architecture will be included in later versions of this document.
+"Рослини App" is a standalone mobile application designed to integrate with ESP32 sensors for monitoring plant moisture levels. The application is new, self-contained, and designed to operate on both Android and iOS platforms. A diagram of the system architecture will be included in later versions of this document.</br>
+</br>
 2.2 Product Functions
 User Registration and Login: Users can register and log in via email.
 Add/Edit Plants: Users can add plants with names, descriptions, photos, and set events (watering, fertilizing).
 Calendar View: Display plant care events on a calendar with the ability to click on an event to see plant details.
 Plant Care Statistics: Track statistics for individual plants and display them to the user.
-ESP32 Sensor Monitoring: Integrate with ESP32 sensors to monitor soil moisture levels and display the data in the app.
+ESP32 Sensor Monitoring: Integrate with ESP32 sensors to monitor soil moisture levels and display the data in the app.</br>
+</br>
 2.3 User Classes and Characteristics
 Plant Enthusiasts: Casual users who wish to track their plant care.
 Gardeners/Greenhouse Owners: More advanced users with a larger number of plants and more frequent care activities.
-Sensor Users: Users with ESP32 sensors connected to their plants for automated monitoring.
+Sensor Users: Users with ESP32 sensors connected to their plants for automated monitoring.</br>
+</br>
 2.4 Operating Environment
-The application will operate on Android and iOS platforms. It will require internet access to sync data with cloud storage and pull data from ESP32 sensors. It will also communicate with Firebase for backend operations and Firestore as a database.
+The application will operate on Android and iOS platforms. It will require internet access to sync data with cloud storage and pull data from ESP32 sensors. It will also communicate with Firebase for backend operations and Firestore as a database.</br>
+</br>
 2.5 Design and Implementation Constraints
 The system must support real-time synchronization with ESP32 sensors.
 The application must comply with Android and iOS design guidelines.
-Firebase and Firestore will be used for user data management and storage.
+Firebase and Firestore will be used for user data management and storage.</br>
+</br>
 2.6 User Documentation
-Online help, video tutorials, and a user guide will be provided to assist users with app features and configuration of ESP32 sensors.
+Online help, video tutorials, and a user guide will be provided to assist users with app features and configuration of ESP32 sensors.</br>
+</br>
 2.7 Assumptions and Dependencies
 The user will have a stable internet connection for syncing data.
-ESP32 sensors need to be correctly set up and integrated for real-time monitoring.
+ESP32 sensors need to be correctly set up and integrated for real-time monitoring.</br>
+</br>
 <h1>3. External Interface Requirements</h1>
 3.1 User Interfaces
 The app will feature a simple, user-friendly UI with the ability to add/edit plants, view the calendar, and monitor statistics. Sample screens will be included in the final design document.
