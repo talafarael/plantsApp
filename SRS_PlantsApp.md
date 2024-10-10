@@ -40,7 +40,7 @@ Online help, video tutorials, and a user guide will be provided to assist users 
 2.7 Assumptions and Dependencies
 The user will have a stable internet connection for syncing data.
 ESP32 sensors need to be correctly set up and integrated for real-time monitoring.
-3. External Interface Requirements
+<h1>3. External Interface Requirements</h1>
 3.1 User Interfaces
 The app will feature a simple, user-friendly UI with the ability to add/edit plants, view the calendar, and monitor statistics. Sample screens will be included in the final design document.
 3.2 Hardware Interfaces
@@ -51,7 +51,7 @@ API integration with ESP32 sensors to receive real-time moisture data.
 3.4 Communications Interfaces
 Data synchronization between the app and Firebase will occur over HTTPS.
 Real-time sensor data will be retrieved via the Wi-Fi module of the ESP32.
-4. System Features
+<h1>4. System Features</h1>
 4.1 User Registration and Login
 4.1.1 Description and Priority
 Users must be able to register and log into the app using their email addresses. This is a high-priority feature to ensure that data is saved securely for each user.
@@ -82,7 +82,7 @@ System Response: The app receives and displays the sensor data in real time.
 4.3.3 Functional Requirements
 The app must display moisture data in a graph or numerical format.
 The app should alert users if moisture levels fall below a certain threshold.
-5. Nonfunctional Requirements
+<h1>5. Nonfunctional Requirements</h1>
 5.1 Performance Requirements
 The app must load plant data within 2 seconds.
 Sensor data must be updated in real time with a delay of no more than 5 seconds.
