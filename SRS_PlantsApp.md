@@ -85,13 +85,13 @@ The app should alert users if moisture levels fall below a certain threshold.
 <h1>5. Nonfunctional Requirements</h1>
 5.1 Performance Requirements
 The app must load plant data within 2 seconds.
-Sensor data must be updated in real time with a delay of no more than 5 seconds.
+Sensor data must be updated in real time with a delay of no more than 5 seconds.</br>
 5.2 Security Requirements
 All user data must be encrypted in transit and at rest.
-User authentication must be secured via Firebase Authentication.
+User authentication must be secured via Firebase Authentication.</br>
 5.3 Software Quality Attributes
 The app must be highly reliable, with 99% uptime for core features.
-Usability should be intuitive, with most users able to add plants without external help.
+Usability should be intuitive, with most users able to add plants without external help.</br>
 5.4 Business Rules
 Users can only delete plants that they have added.
 The app will notify users of upcoming plant care events via push notifications.
