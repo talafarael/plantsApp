@@ -21,8 +21,8 @@
 ### 1.1 Document Overview
 Describe what the rest of the document contains and how it is organized.
 
-## 2.Product Overview
+## 2. Product Overview
 ### 2.1. Purpose
    - The goal of the "Plants App" project is to create Android/IOS that allows users to register, add their plants with photos, descriptions, and event dates. The application should support plant condition monitoring via ESP32 sensors, display events in a calendar, and provide statistics on plant care.
-###  2.2Target Audience
+###  2.2. Target Audience
    - The primary users of the application are plant lovers, gardeners, and greenhouse owners who want to improve their plant care processes.
